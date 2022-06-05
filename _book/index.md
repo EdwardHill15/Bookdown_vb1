@@ -2,18 +2,27 @@
 title: "A Minimal Book Example"
 author: "John Doe"
 date: "2022-06-05"
-site: bookdown::bookdown_site
+output: pdf_document
 documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
+bibliography:
+- book.bib
+- packages.bib
 description: |
   This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::bs4_book,
   set in the _output.yml file.
+  The HTML output format for this example is bookdown::bs4_book,
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
+site: bookdown::bookdown_site
 ---
+<style type="text/css">
+  body {
+  background-color: #00ffff;
+  
+}
+
+</style>
+
 
 # About
 
